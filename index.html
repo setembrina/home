@@ -1,37 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Em Construção</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
-      padding: 20px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal da Escola</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>🚧 Site em Construção</h1>
-  <p>Estamos trabalhando para trazer novidades em breve!</p>
+    <!-- 1. CABEÇALHO E NAVEGAÇÃO -->
+    <header>
+        <div class="logo">
+            <h1>Nome da Escola</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#avisos">Avisos</a></li>
+                <li><a href="#jornal">Jornal</a></li>
+                <li><a href="#destaques">Alunos Destaque</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#achados-perdidos">Achados e Perdidos</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <!-- 2. MURAL DE AVISOS (CARROSSEL) -->
+        <section id="avisos">
+            <h2>Mural de Avisos</h2>
+            
+            <div class="carrossel-wrapper">
+                <!-- Container com as imagens -->
+                <div class="carrossel-container">
+                    
+                    <!-- AVISO 1 -->
+                    <article class="aviso-item">
+                        <img src="img/banner1.png" alt="Aviso inscrições 1" class="aviso-img">
+                    </article>
+
+                    <!-- AVISO 2 -->
+                    <article class="aviso-item">
+                        <img src="img/banner2.png" alt="Aviso inscrições 2" class="aviso-img">
+                    </article>
+
+                </div>
+
+                <!-- Botões de Navegação -->
+                <button class="prev" id="btnPrev" aria-label="Aviso Anterior">❮</button>
+                <button class="next" id="btnNext" aria-label="Próximo Aviso">❯</button>
+            </div>
+
+            <!-- Indicadores (Bolinhas) -->
+            <div class="carrossel-indicadores" id="indicadores">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!-- 3. JORNAL DA ESCOLA -->
+        <section id="jornal">
+            <h2>Jornal da Escola</h2>
+            <div class="noticias-grid">
+                <article class="noticia-card">
+                    <h3>Em breve</h3>
+                    <p>As edições e matérias do nosso jornal escolar estarão disponíveis aqui em breve.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. ALUNOS DESTAQUE -->
+        <section id="destaques">
+            <h2>Alunos Destaque</h2>
+            <div class="alunos-grid">
+                <article class="aluno-card">
+                    <h3>Em breve</h3>
+                    <p>Em breve compartilharemos os alunos em destaque da nossa comunidade!</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 5. GALERIA DE EVENTOS -->
+        <section id="galeria">
+            <h2>Galeria de Eventos</h2>
+            <div class="galeria-grid">
+                <div class="album-card">
+                    <h3>Em breve</h3>
+                    <p>Fotos dos próximos eventos serão adicionadas aqui.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. ACHADOS E PERDIDOS -->
+        <section id="achados-perdidos">
+            <h2>Achados e Perdidos</h2>
+            <div class="itens-grid">
+                <article class="item-card">
+                    <h3>Em breve</h3>
+                    <p>A lista de itens achados e perdidos será atualizada aqui.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 Nome da Escola - Todos os direitos reservados.</p>
+        <p>Endereço, telefone e redes sociais em breve.</p>
+    </footer>
+
+    <!-- Chamada do JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
